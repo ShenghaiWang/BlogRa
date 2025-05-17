@@ -1,6 +1,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   {{ range .Data.Pages }}
-      {{ if not (or (strings.HasSuffix .RelPermalink "/addons/") (strings.HasSuffix .RelPermalink "/admin/")) }}
+      {{ if not (or (strings.HasSuffix .RelPermalink "/addons/") (strings.HasSuffix .RelPermalink "/admin/") (strings.HasSuffix .RelPermalink "/categories/")) }}
       
 	  <url>
 	    <loc>{{ .Permalink }}</loc>

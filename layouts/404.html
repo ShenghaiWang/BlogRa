@@ -31,7 +31,7 @@
             {{/* $filteredPosts := where (where .Site.Pages "Type" "blog") "UniqueID" "!= ".UniqueID }}
             {{ $relatedPosts := shuffle $filteredPosts | first 3 */}}
 
-            {{ $allPosts := where .Site.RegularPages ".Section" "in" (slice "posts" "sections") }}
+            {{ $allPosts := where .Site.RegularPages ".Section" "in" (slice "blog") }}
             {{ $randomPosts := shuffle $allPosts | first 6 }}
             {{ $randomPosts := $randomPosts.ByDate.Reverse }}
 

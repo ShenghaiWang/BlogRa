@@ -22,7 +22,7 @@
 
         <div class="tags">
             {{ range .Params.tags }}
-            <a href="{{ (print "tags/" (. | urlize) | relURL) }}"><span class="tag bg-dark">{{ . }}</span></a>
+            <a href="{{ (print "tags/" (. | urlize) | relURL) }}"><span class="tag bg-danger">{{ . }}</span></a>
             {{ end }}
         </div>
     </div>
